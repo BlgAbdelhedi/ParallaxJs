@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Parallax clouds</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <script type="text/javascript" src="src/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="src/lib/js/TweenMax.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="spacer1"></div>
+    <div id="trigger1"></div>
+    <ul id="scene" class="scene">
+        <li class="layer" data-depth="0.40"><img id="l_cloud1" src="src/images/cloud1.png"> </li>
+        <li class="layer" data-depth="0.55"><img id="l_cloud2" src="src/images/cloud2.png"> </li>
+        <li class="layer" data-depth="0.25"><img id="l_cloud3" src="src/images/cloud3.png"> </li>
+        <li class="layer" data-depth="0.40"><img id="s_cloud1" src="src/images/c1.png"> </li>
+        <li class="layer" data-depth="01.20"><img id="s_cloud2" src="src/images/c3.png"> </li>
+    </ul>
+
+    <script src="src/lib/js/parallax.min.js"></script>
+    <script>
+        let scene = document.getElementById('scene');
+        let parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>
